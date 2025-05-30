@@ -14,4 +14,6 @@ test('should sort parts ascending if they are not equal', () => {
   expect(splitInteger(17, 4)).toEqual([4, 4, 4, 5]);
 });
 
-expect(splitInteger(3, 5)).toEqual([0, 0, 1, 1, 1]);
+test('should handle case when value < numberOfParts', () => {
+  expect(splitInteger(3, 5)).toEqual([0, 0, 1, 1, 1]);
+});
